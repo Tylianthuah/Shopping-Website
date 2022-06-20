@@ -60,7 +60,7 @@ img {
 
 .shop {
   height: 85vh;
-  background-color: green;
+  background-color: #ccc;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
