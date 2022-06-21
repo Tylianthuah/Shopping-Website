@@ -19,6 +19,10 @@ img {
   width: 100%;
 }
 
+button {
+  border: none;
+}
+
 /* !Navigation Bar */
 .navbar {
   display: flex;
@@ -137,10 +141,9 @@ img {
   text-align: center;
   color: #333;
   text-transform: uppercase;
-  display: none;
 }
 
-.label h2{
+.label .empty-title{
   display: block;
   padding: 30px;
   margin-bottom: 23px ;
@@ -155,8 +158,31 @@ img {
   border-radius: 5px;
   cursor: pointer;
 }
+.label button {
+  padding: 5px 7px;
+  border-radius: 3px;
+  margin-top:  10px;
+  font-size: medium;
+  margin-left: 3px;
+  color: #fff;
+  cursor: pointer;
+}
 
+.label .label-total {
+  text-transform: capitalize;
+}
 
+.label .label-total span {
+  color: green;
+}
+
+.label .checkout {
+  background-color: green;
+  }
+
+  .label .clearAll {
+    background-color: red;
+  }
 /* !Card-Item */
 
 .shopping-item {
@@ -207,6 +233,7 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: 20px;
 }
 
 .shopping-item .minus {
@@ -231,4 +258,18 @@ img {
 .shopping-item .item-total {
   color: green;
   font-size: 1.5rem;
+}
+
+.shopping-item .cart-details .name p {
+  padding: 5px 7px;
+  background-color: black;
+  color:  white;
+  border-radius: 3px;
+}
+
+
+@media (max-width: 1100px) {
+  .shopping-item {
+    grid-template-columns: 500px;
+  }
 }
