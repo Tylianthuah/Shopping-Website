@@ -126,3 +126,109 @@ img {
     padding: 30px 30px;
   }
 }
+
+
+/* !Card Html syling */
+
+.label {
+  margin: 8px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  display: none;
+}
+
+.label h2{
+  display: block;
+  padding: 30px;
+  margin-bottom: 23px ;
+  background-color: white;  
+  }
+
+.label a {
+  padding: 10px 13px;
+  background-color: #333;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* !Card-Item */
+
+.shopping-item {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  padding: 30px;
+  color: black;
+  justify-content: center;
+  gap: 50px;
+}
+
+.shopping-item img {
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+} 
+
+.shopping-item .item {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #ccc;
+  background-color: rgb(254, 243, 243);
+}
+
+.shopping-item .cart-details {
+  width : 100%;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.shopping-item .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-item .name {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.shopping-item .quantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shopping-item .minus {
+  color: red;
+}
+
+.shopping-item .plus {
+  color: green;
+}
+
+.shopping-item .cross-icon {
+  padding: 5px 7px;
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.shopping-item .item-total {
+  color: green;
+  font-size: 1.5rem;
+}

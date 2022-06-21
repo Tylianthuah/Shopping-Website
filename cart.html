@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+
+    <!--!External Css-->
+    <link rel="stylesheet" href="style.css">
+    <!--!Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <a href="index.html" class="title">
+            <h2>Shopp</h2>
+        </a>
+
+        <a href="index.html">
+            <div class="cart">
+                <i class="bi bi-cart2 cart-logo "></i>
+                <div class="cart-amount" id="cart-amount">0</div>
+            </div>
+        </a>
+    </navbar>
+
+
+    <div id="label" class="label">
+        <h2>Cart is empty</h2>
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <div class="shopping-item" id="shopping-item">
+        <div class="item">
+            <img src="img/img-1.jpg" alt="">
+            <div class="cart-details">
+                <div class="main">
+                    <div class="name">
+                        <h2>Name</h2>
+                        <p>price</p>
+                    </div>
+                    <i class="bi bi-x-lg cross-icon"></i>
+                </div>
+
+                <div class="quantity">
+                    <i class="bi bi-dash-lg minus"></i>
+                    <div id="${id}" class="quantityAmount">
+                        0
+                    </div>
+                    <i class="bi bi-plus-lg plus"></i>
+                </div>
+
+                <h2 class="item-total">Price</h2>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/img-1.jpg" alt="">
+            <div class="cart-details">
+                <div class="main">
+                    <div class="name">
+                        <h2>Name</h2>
+                        <p>price</p>
+                    </div>
+                    <i class="bi bi-x-lg cross-icon"></i>
+                </div>
+
+                <div class="quantity">
+                    <i class="bi bi-dash-lg minus"></i>
+                    <div id="${id}" class="quantityAmount">
+                        0
+                    </div>
+                    <i class="bi bi-plus-lg plus"></i>
+                </div>
+
+                <h2 class="item-total">Price</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="data.js"></script>
+<script src="cart.js"></script>
+
+</html>
